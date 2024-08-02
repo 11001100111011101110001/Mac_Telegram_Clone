@@ -21,7 +21,8 @@ nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path > /
 1. 下载 Telegram 桌面版并安装，默认安装路径 `/Applications/Telegram.app`，如果系统中存在多个 Telegram 版本，需要根据实际情况进行微调。
 2. 打开 Mac 终端，快捷键 `command + 空格` 搜索终端。
 ![img_2.png](img_2.png)
-3.运行以下命令
+
+3. 运行以下命令
 
 ```shell
 # 建立分身数据存储文件夹（也可以起别的名字，随意）
