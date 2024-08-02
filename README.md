@@ -2,7 +2,7 @@
 
 ## 实现原理
 
-> 利用 Telegram 桌面版的 `-workdir` 指定工作目录来运行多个 Telegram 实例
+> 利用 Telegram 官方桌面版的 `-workdir` 指定工作目录来运行多个 Telegram 实例
 
 ## 预览图
 ![img.png](img.png)
