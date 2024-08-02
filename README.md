@@ -1,5 +1,7 @@
 # 在 Mac 上多开 Telegram 教程
 
+> 该教程只对 Mac Telegram 桌面版有效
+
 ## 实现原理
 
 > 利用 Telegram 官方桌面版的 `-workdir` 指定工作目录来运行多个 Telegram 实例
@@ -39,14 +41,17 @@ nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path > /
 ```
 
 ## 批量创建和运行 Telegram 分身
-### 无 Tag 版本
+
+> 批量脚本分为 2 个版本
+
+### 无 Tag 版本（telegram_clone_without_tag.sh）
 
 > 适合无需创建太多分身的家人
 
 + 优点：清爽，不会占用多余的硬盘空间。
 + 缺点：无法对分身进行编号，大家都长一样，分身多了之后分不清。
 
-### Tag 版本
+### Tag 版本（telegram_clone_with_tag.sh）
 
 > 适合需要创建很多分身的家人，例如 10 个以上
 
