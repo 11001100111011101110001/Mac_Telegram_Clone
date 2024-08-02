@@ -40,7 +40,7 @@ mkdir 100
 nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path > /dev/null 2>&1 &
 ```
 
-## 批量创建和运行 Telegram 分身
+## 批量创建和运行 Telegram 多个分身
 
 > 批量脚本分为 2 个版本
 
