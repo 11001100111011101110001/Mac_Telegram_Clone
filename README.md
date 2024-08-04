@@ -37,7 +37,7 @@ cd telegram_clone
 mkdir 100
 
 # 创建 Telegram 分身，基础语法： `Telegram 安装路径` -workdir `用户路径`
-nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path > /dev/null 2>&1 &
+nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path/telegram_clone/100 > /dev/null 2>&1 &
 ```
 
 ## 批量创建和运行 Telegram 多个分身
