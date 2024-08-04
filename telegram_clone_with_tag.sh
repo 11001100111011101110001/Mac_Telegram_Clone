@@ -35,11 +35,11 @@ fi
 # 循环创建 Telegram 分身和 Telegram 数据子文件夹
 for (( i=START; i<=END; i++ ))
 do
-  APP_CLONE="$APP_TELEGRAM_CLONE_DIR/Telegram_$i"
+  APP_CLONE="$APP_TELEGRAM_CLONE_DIR/Telegram_$i.app"
   if [ -d "$APP_CLONE" ]; then
       echo "Directory $APP_CLONE already exists. Skipping."
     else
-      cp -R "/Applications/Telegram.app" "$APP_TELEGRAM_CLONE_DIR/Telegram_$i.app"
+      cp -R /Applications/Telegram.app $APP_CLONE
       echo "Created directory $APP_CLONE."
   fi
 
