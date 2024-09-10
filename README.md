@@ -9,7 +9,7 @@
 ## 预览图
 ![img.png](img.png)
 
-## 创建单个 Telegram 分身（批量创建脚本在下一节）
+## 创建单个 Telegram 分身（非必要步骤，批量创建脚本在下一节）
 
 ```shell
 # Telegram 安装路径 -workdir 用户路径
