@@ -93,7 +93,7 @@ cd Mac_Telegram_Clone
 chmod +x telegram_clone_without_tag.sh
 
 # 创建/运行分身，第一个参数代表开始编号，第二个参数代表结束编号
-./telegram_clone_xxxxx.sh 1 10 # 创建/运行编号为 1-10 的 TG 分身
+./telegram_clone_without_tag.sh 1 10 # 创建/运行编号为 1-10 的 TG 分身
 ```
 
 ## 关于升级
