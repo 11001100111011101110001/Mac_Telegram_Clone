@@ -96,6 +96,16 @@ chmod +x telegram_clone_without_tag.sh
 ./telegram_clone_without_tag.sh 1 10 # 创建/运行编号为 1-10 的 TG 分身
 ```
 
+## 数据存储路径
+
+```
+# 分身用户存储路径
+/User/path/telegram_clone
+
+# 分身软件存储路径（只有使用带 tag 版批量多开才会产生此文件夹）
+/Applications/TelegramClone
+```
+
 ## 关于升级
 
 > 如果使用的是不带 Tag 的脚本创建的分身，只需要升级主程序即可。如果是带 Tag 的脚本创建的分身，升级了主程序后，将 `/Applications/TelegramClone` 路径下的分身全部删除，重新运行创建分身软件即可。
