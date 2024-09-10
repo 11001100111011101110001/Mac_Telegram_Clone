@@ -66,11 +66,11 @@ git cloen https://github.com/11001100111011101110001/Mac_Telegram_Clone.git
 cd Mac_Telegram_Clone
 
 # 赋予执行权限，with_tag 脚本会对分身进行编号，without_tag 不会
-chmod +x telegram_clone_xxxxx.sh
+chmod +x telegram_clone_with_tag.sh
 
 # 创建/运行分身，--start 是开始编号，--end 是结束编号，--tag_num 是创建/运行指定编号分身
-./telegram_clone_xxxxx.sh --start 1 --end 10 # 创建/运行编号为 1-10 的 TG 分身
-./telegram_clone_xxxxx.sh --tag_num 10 15 18 # 创建/运行编号为 10 15 18 的 TG 分身
+./telegram_clone_with_tag.sh --start 1 --end 10 # 创建/运行编号为 1-10 的 TG 分身
+./telegram_clone_with_tag.sh --tag_num 10 15 18 # 创建/运行编号为 10 15 18 的 TG 分身
 ```
 
 ### 无 Tag 版本（telegram_clone_without_tag.sh）
