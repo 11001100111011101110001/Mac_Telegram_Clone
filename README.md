@@ -9,7 +9,7 @@
 ## 预览图
 ![img.png](img.png)
 
-## 创建单个 Telegram 分身
+## 创建单个 Telegram 分身（批量创建脚本在下一节）
 
 ```shell
 # Telegram 安装路径 -workdir 用户路径
@@ -44,13 +44,6 @@ nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path/tel
 
 > 批量脚本分为 2 个版本
 
-### 无 Tag 版本（telegram_clone_without_tag.sh）
-
-> 适合无需创建太多分身的家人
-
-+ 优点：清爽，不会占用多余的硬盘空间。
-+ 缺点：无法对分身进行编号，大家都长一样，分身多了之后分不清。
-
 ### Tag 版本（telegram_clone_with_tag.sh）
 
 > 适合需要创建很多分身的家人，例如 10 个以上
@@ -60,12 +53,10 @@ nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path/tel
 
 ![img_1.png](img_1.png)
 
-### 使用教程
+#### 使用教程
 
 1. 下载 Telegram 桌面版，并安装，默认安装路径 `/Applications/Telegram.app`，如果有其他版本的 Telegram 占用了该路径，先卸载避免产生冲突。安装完桌面版后，可以再安装其他版本的 TG。
-2. 打开 Mac 终端，快捷键 `command + 空格` 搜索终端。
-      ![img_2.png](img_2.png)
-3. 运行以下命令
+2. 打开 Mac 终端，运行以下命令。
 
 ```shell
 # 下载批量脚本
@@ -77,11 +68,32 @@ cd Mac_Telegram_Clone
 # 赋予执行权限，with_tag 脚本会对分身进行编号，without_tag 不会
 chmod +x telegram_clone_xxxxx.sh
 
-# 创建/运行分身，start 是开始编号，end 是结束编号，开始编号和结束编号可以相同
-./telegram_clone_xxxxx.sh start end
+# 创建/运行分身，--start 是开始编号，--end 是结束编号，--tag_num 是创建/运行指定编号分身
+./telegram_clone_xxxxx.sh --start 1 --end 10 # 创建/运行编号为 1-10 的 TG 分身
+./telegram_clone_xxxxx.sh --tag_num 10 15 18 # 创建/运行编号为 10 15 18 的 TG 分身
+```
 
-# 比如要创建/运行编号 1-10 的分身
-./telegram_clone_xxxxx.sh 1 10
+### 无 Tag 版本（telegram_clone_without_tag.sh）
+
+> 适合无需创建太多分身和无需对分身进行编号管理的家人
+
++ 优点：清爽，不会占用多余的硬盘空间。
++ 缺点：无法对分身进行编号，大家都长一样，分身多了之后容易分不清。
+
+#### 使用教程
+
+```shell
+# 下载批量脚本
+git cloen https://github.com/11001100111011101110001/Mac_Telegram_Clone.git
+
+# 进入脚本目录
+cd Mac_Telegram_Clone
+
+# 赋予执行权限，with_tag 脚本会对分身进行显性编号；without_tag 不会，需要家人自己记录对应关系。
+chmod +x telegram_clone_without_tag.sh
+
+# 创建/运行分身，第一个参数代表开始编号，第二个参数代表结束编号
+./telegram_clone_xxxxx.sh 1 10 # 创建/运行编号为 1-10 的 TG 分身
 ```
 
 ## 关于升级
