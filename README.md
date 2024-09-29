@@ -40,6 +40,9 @@ mkdir 100
 nohup /Applications/Telegram.app/Contents/MacOS/Telegram -workdir /User/path/telegram_clone/100 > /dev/null 2>&1 &
 ```
 
+_**需要注意的是，下次启动时，也需要用同样的命令启动，直接点击图标是无法指定用户路径的。**_
+
+
 ## 批量创建和运行 Telegram 多个分身
 
 > 批量脚本分为 2 个版本
@@ -105,6 +108,8 @@ chmod +x telegram_clone_without_tag.sh
 # 分身软件存储路径（只有使用带 tag 版批量多开才会产生此文件夹）
 /Applications/TelegramClone
 ```
+
+_**需要注意的是，下次启动时，需要用命令启动，直接点击图标是无法指定用户路径的。**_
 
 ## 关于升级
 
